@@ -1,5 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 RESTful Routes
+  ul
+    li
+      b METHOD: GET
+      p URL: /api/v1/todos
+      p DESCRIPTION: Get all todos
+    li
+      b METHOD: GET
+      p URL: /api/v1/todos/:id
+      p DESCRIPTION: Get a single todo by ID
+    li
+      b METHOD: POST
+      p URL: /api/v1/todos
+      p DESCRIPTION: Create a todo
+    li
+      b METHOD: PUT
+      p URL: /api/v1/todos/:id
+      p DESCRIPTION: Update a todo by ID
+    li
+      b METHOD: DELETE
+      p URL: /api/v1/todos/:id
+      p DESCRIPTION: Delete a todo by ID
+   a(href="/instructions") Instructions
